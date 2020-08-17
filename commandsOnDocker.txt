@@ -1,0 +1,3 @@
+sudo systemctl enable docker   // starts docker when system starts
+sudo usermod -aG docker <linux server name>
+whoami // <linux server name>
