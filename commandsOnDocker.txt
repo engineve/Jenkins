@@ -1,5 +1,13 @@
 sudo systemctl enable docker   // starts docker when system starts
-sudo usermod -aG docker <linux server name>
+sudo usermod -aG docker <linux server name> // append Group
 whoami // <linux server name>
 
-docker pull jenkins/jenkins
+sudo chmod +x <docker-compose installed directory>  
+
+docker-compose
+
+docker pull jenkins/jenkins // docker for jenkins
+
+docker images
+
+docker info | grep -i root
