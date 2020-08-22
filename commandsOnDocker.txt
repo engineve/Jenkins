@@ -11,3 +11,7 @@ docker pull jenkins/jenkins // docker for jenkins
 docker images
 
 docker info | grep -i root
+
+docker-compose up -d  // start server with docker-compose.yml setting
+
+docker logs -f <container-name>    // show logs of the container
