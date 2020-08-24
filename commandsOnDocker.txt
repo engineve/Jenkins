@@ -15,3 +15,11 @@ docker info | grep -i root
 docker-compose up -d  // start server with docker-compose.yml setting
 
 docker logs -f <container-name>    // show logs of the container
+
+docker-compose stop
+
+docker-compose start
+
+docker-compose restart jenkins
+
+docker-compose down // removing but still data stored
