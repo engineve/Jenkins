@@ -27,3 +27,4 @@ exit // from docker container
 
 docker exec -ti <container-name> bash    // i : interactive, stdin  t : teletypewriter, output on terminal
 
+docker cp <file-name> <container-name>:directory   // copy file on local to container
