@@ -1,0 +1,29 @@
+sudo systemctl start docker
+
+sudo chmod +x /usr/local/bin/docker-compose  // executable
+
+docker-compose
+
+docker images
+
+docker info | grep -i root   // root directory
+
+sudo du -sh /var/lib/docker    // du -> disk usage
+
+sudo chown USER[:GROUP] FILE // change owner of the FILE to USER(GROUP)
+
+echo 'Current time is $(date)'
+
+NAME=tester
+
+echo 'Hey, $(NAME), Current date is $(date)'
+
+
+echo 'Hey, $(NAME), Current date is $(date)' > /tmp
+
+cat /tmp    // Hey, tester, Current date is Tue Aug 25 14:30:21 UTC 2020
+
+exit // from docker container
+
+docker exec -ti <container-name> bash    // i : interactive, stdin  t : teletypewriter, output on terminal
+
