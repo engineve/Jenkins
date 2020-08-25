@@ -1,0 +1,24 @@
+------ linux terminal
+
+vi example.sh
+
+chmod +x ./example.sh
+cat example.sh
+
+
+------ vi
+
+#!/bin/bash    // use bash as an interpreter
+
+parameter1=$1
+parameter2=$2
+
+echo 'this is $parameter1 and this is $parameter2'
+
+:wq
+
+------- linux terminal
+
+./ example.sh hi hello
+
+---> this is hi and this is hello
