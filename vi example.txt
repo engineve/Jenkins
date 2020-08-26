@@ -22,3 +22,6 @@ echo 'this is $parameter1 and this is $parameter2'
 ./ example.sh hi hello
 
 ---> this is hi and this is hello
+
+
+
