@@ -42,3 +42,6 @@ ssh-keygen -f <key-name>   // to create public, private key on centos
 yum -y install openssh-server
 /user/sbin/sshd-keygen // ssh-keygen -A
 /user/sbin/sshd -D
+
+// To apply ownership recursively on all files and directories under a given directory use -R option
+chown owner:group -R <directory>  //  the ownership of files and directories under <directory> will be changed to 'owner', group ownership to 'group'
