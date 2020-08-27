@@ -28,3 +28,10 @@ exit // from docker container
 docker exec -ti <container-name> bash    // i : interactive, stdin  t : teletypewriter, output on terminal
 
 docker cp <file-name> <container-name>:directory   // copy file on local to container
+
+
+useradd <user>
+
+echo "password" | passwd <user>  --stdin   // change password of user in centos 7
+echo "remote_user:password" | chpasswd  // change password of user in centos8
+  
