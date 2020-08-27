@@ -35,3 +35,10 @@ useradd <user>
 echo "password" | passwd <user>  --stdin   // change password of user in centos 7
 echo "remote_user:password" | chpasswd  // change password of user in centos8
   
+
+ssh-keygen -f <key-name>   // to create public, private key on centos
+
+
+yum -y install openssh-server
+/user/sbin/sshd-keygen // ssh-keygen -A
+/user/sbin/sshd -D
