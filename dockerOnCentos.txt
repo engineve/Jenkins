@@ -45,3 +45,8 @@ yum -y install openssh-server
 
 // To apply ownership recursively on all files and directories under a given directory use -R option
 chown owner:group -R <directory>  //  the ownership of files and directories under <directory> will be changed to 'owner', group ownership to 'group'
+
+
+docker exec -it <container-name> bash
+ssh <username>@<service-name>   // connect to another container in compose through ssh
+ssh -i <private-key> <username>@<service-name, DNS, IP>  // connect without password, with private key
