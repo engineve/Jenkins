@@ -50,3 +50,5 @@ chown owner:group -R <directory>  //  the ownership of files and directories und
 docker exec -it <container-name> bash
 ssh <username>@<service-name>   // connect to another container in compose through ssh
 ssh -i <private-key> <username>@<service-name, DNS, IP>  // connect without password, with private key
+
+mysql -u root -h <host-name> -p   //  connect to host db with password
