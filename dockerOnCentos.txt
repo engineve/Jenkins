@@ -54,3 +54,7 @@ ssh -i <private-key> <username>@<service-name, DNS, IP>  // connect without pass
 mysql -u root -h <host-name> -p   //  connect to host db with password
 
 mysqldump -u root -h <host-name> -p <database-name> > <directory>/db.sql  // backup data(db.sql) to the directory
+
+export AWS_ACCESS_KEY_ID=''
+export AWS_SECRET_ACCESS_KEY=''
+aws s3 cp <directory>/db.sql s3://<bucket-name>/db.sql   // copy data to s3 bucket
