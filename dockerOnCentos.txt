@@ -52,3 +52,5 @@ ssh <username>@<service-name>   // connect to another container in compose throu
 ssh -i <private-key> <username>@<service-name, DNS, IP>  // connect without password, with private key
 
 mysql -u root -h <host-name> -p   //  connect to host db with password
+
+mysqldump -u root -h <host-name> -p <database-name> > <directory>/db.sql  // backup data(db.sql) to the directory
