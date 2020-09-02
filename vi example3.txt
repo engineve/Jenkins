@@ -1,0 +1,10 @@
+-----vi script.sh
+
+#/bin/bash
+
+day=$(date +%H_%M_%S)
+DBhost=$1
+DBpw=$2
+DBname=$3
+
+mysqldump -u root -h $DBhost -p$DBpw $DBname > database_$day.sql   // save database_dayinfo.sql on current directory 
