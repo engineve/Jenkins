@@ -58,3 +58,5 @@ mysqldump -u root -h <host-name> -p <database-name> > <directory>/db.sql  // bac
 export AWS_ACCESS_KEY_ID=''
 export AWS_SECRET_ACCESS_KEY=''
 aws s3 cp <directory>/db.sql s3://<bucket-name>/db.sql   // copy data to s3 bucket
+
+docker rm -fv <container-name> // delete the container
