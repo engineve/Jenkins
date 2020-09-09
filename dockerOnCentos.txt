@@ -60,3 +60,7 @@ export AWS_SECRET_ACCESS_KEY=''
 aws s3 cp <directory>/db.sql s3://<bucket-name>/db.sql   // copy data to s3 bucket
 
 docker rm -fv <container-name> // delete the container
+
+
+sudo pip install ansible
+ansible -i <host-file-name> -m ping <alias host name>
