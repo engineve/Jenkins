@@ -64,3 +64,6 @@ docker rm -fv <container-name> // delete the container
 
 sudo pip install ansible
 ansible -i <host-file-name> -m ping <alias host name>
+
+
+ansible-playbook -i <host file name> <playbook.yml> 
