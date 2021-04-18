@@ -3,10 +3,11 @@
 vi example.sh
 
 chmod +x ./example.sh
+
 cat example.sh
 
 
------- vi
+``` example.sh
 
 #!/bin/bash    // use bash as an interpreter
 
@@ -15,13 +16,10 @@ parameter2=$2
 
 echo 'this is $parameter1 and this is $parameter2'
 
-:wq
+```
 
 ------- linux terminal
 
-./ example.sh hi hello
+./example.sh hi hello
 
----> this is hi and this is hello
-
-
-
+    this is hi and this is hello

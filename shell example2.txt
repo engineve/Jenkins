@@ -2,7 +2,7 @@
 
 vi example2.sh
 
--------- vi
+``` example2.sh
 
 #!/bin/bash    // use bash as an interpreter
 
@@ -16,4 +16,4 @@ else
   echo 'If you want to buy the car, ask the price'
 fi
 
-:wq
+```

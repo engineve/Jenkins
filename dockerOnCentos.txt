@@ -12,16 +12,20 @@ sudo du -sh /var/lib/docker    // du -> disk usage
 
 sudo chown USER[:GROUP] FILE // change owner of the FILE to USER(GROUP)
 
+
+``` .sh
+
 echo 'Current time is $(date)'
 
 NAME=tester
 
 echo 'Hey, $(NAME), Current date is $(date)'
 
-
 echo 'Hey, $(NAME), Current date is $(date)' > /tmp
 
 cat /tmp    // Hey, tester, Current date is Tue Aug 25 14:30:21 UTC 2020
+
+```
 
 exit // from docker container
 
@@ -64,6 +68,5 @@ docker rm -fv <container-name> // delete the container
 
 sudo pip install ansible
 ansible -i <host-file-name> -m ping <alias host name>
-
 
 ansible-playbook -i <host file name> <playbook.yml> 

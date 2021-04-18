@@ -8,6 +8,10 @@ docker-compose
 
 docker pull jenkins/jenkins // docker for jenkins
 
+    docker pull jenkins
+    To use the latest LTS: docker pull jenkins/jenkins:lts
+    To use the latest weekly: docker pull jenkins/jenkins
+
 docker images
 
 docker info | grep -i root

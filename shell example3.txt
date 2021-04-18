@@ -1,4 +1,4 @@
------vi script.sh
+``` script.sh
 
 #/bin/bash
 
@@ -8,3 +8,5 @@ DBpw=$2
 DBname=$3
 
 mysqldump -u root -h $DBhost -p$DBpw $DBname > database_$day.sql   // save database_dayinfo.sql on current directory 
+
+```
