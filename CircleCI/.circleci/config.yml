@@ -6,7 +6,7 @@ jobs:
        - image: circleci/node:latest   # test environment    DockerHub > circleci
      steps:
        - checkout  # checkout the code
-         - run: echo "build phase..."
+       - run: echo "build phase..."
        - run: npm install
        - run: ENV="" npm run build   # environmental variable 'ENV'
    test:
@@ -34,6 +34,6 @@ workflows:
           # filters:
           #     branches:
           #       only:
-          #         - master
+          #         - master  # Any branches that match 'only' will run the job.
           requires:
             - build   # require 'build' job to be done first
