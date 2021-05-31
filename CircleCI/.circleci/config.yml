@@ -21,19 +21,19 @@ jobs:
 workflows:
   version: 2
   build-test:  # workflow name   
-    jobs:  # running in parallel on separate containers
-      - build
+    jobs:  # each job running in parallel on separate containers except 'requires' case etc
+      - test
+          # filters:
+          #     branches:
+          #       only:
+          #         - master  # Any branches that match 'only' will run the job.
+     
+     - build
           # pre-steps: # steps to run before steps defined in the job bar
           #   - run:
           #       command: echo "install custom dependency"
           # post-steps: # steps to run after steps defined in the job bar
           #   - run:
           #       command: echo "upload artifact to s3"
-
-      - test
-          # filters:
-          #     branches:
-          #       only:
-          #         - master  # Any branches that match 'only' will run the job.
           requires:
-            - build   # require 'build' job to be done first
+            - test   # require 'test' job to be done first 
